@@ -149,7 +149,7 @@ main {
   text-align: center;
 }
 
-/* トップページの説明セクション（「tiny handy worksについて」「お支払いナビとは」） */
+/* トップページの説明セクション（「Tidbitsについて」「お支払いナビとは」） */
 .content-block {
   margin-bottom: var(--space-xl);
 }

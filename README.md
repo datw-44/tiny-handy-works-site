@@ -1,4 +1,4 @@
-# tiny handy works
+# Tidbits
 
 tiny-handy-works.com のトップページ。プレーンなHTML/CSSのみで、ビルド不要（GitHub Pagesの「Deploy from a branch」でそのまま公開する）。
 
