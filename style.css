@@ -149,6 +149,27 @@ main {
   text-align: center;
 }
 
+/* トップページの説明セクション（「tiny handy worksについて」「お支払いナビとは」） */
+.content-block {
+  margin-bottom: var(--space-xl);
+}
+
+.content-block section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg) var(--space-lg);
+}
+
+.content-block p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: var(--fw-body);
+  line-height: 1.9;
+  color: var(--text-main);
+}
+
 /* 規約系ページ */
 .legal-title {
   margin: var(--space-sm) 0 var(--space-md);
