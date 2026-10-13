@@ -239,6 +239,114 @@ main {
   font-weight: var(--fw-body);
 }
 
+/* 読み物ページ（記事） */
+.article-title {
+  margin: var(--space-sm) 0 var(--space-md);
+  font-size: 20px;
+  font-weight: var(--fw-heading);
+  line-height: 1.5;
+}
+
+.article-lead {
+  margin: 0 0 var(--space-lg);
+  font-size: 13px;
+  font-weight: var(--fw-body);
+  color: var(--text-sub);
+  line-height: 1.8;
+}
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.article-body section {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md) var(--space-lg);
+}
+
+.article-body h2 {
+  margin: 0 0 var(--space-sm);
+  font-size: 15px;
+  font-weight: var(--fw-heading);
+  color: var(--text-main);
+}
+
+.article-body p {
+  margin: 0 0 var(--space-sm);
+  font-size: 13px;
+  font-weight: var(--fw-body);
+  line-height: 1.9;
+  color: var(--text-main);
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+.article-body ul {
+  margin: 0 0 var(--space-sm);
+  padding-left: 1.2em;
+  font-size: 13px;
+  font-weight: var(--fw-body);
+  line-height: 1.9;
+  color: var(--text-main);
+}
+
+.article-body li {
+  margin-bottom: 4px;
+}
+
+.article-body a {
+  color: var(--accent);
+}
+
+.article-note {
+  margin: var(--space-md) 0 0;
+  font-size: 11px;
+  font-weight: var(--fw-note);
+  color: var(--text-faint);
+  line-height: 1.7;
+}
+
+/* トップページの記事リスト */
+.article-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.article-list-item {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-sm) var(--space-md);
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-list-item-title {
+  margin: 0 0 2px;
+  font-size: 14px;
+  font-weight: var(--fw-heading);
+  color: var(--text-main);
+}
+
+.article-list-item-desc {
+  margin: 0;
+  font-size: 12px;
+  font-weight: var(--fw-note);
+  color: var(--text-sub);
+  line-height: 1.6;
+}
+
 /* 全ページ共通フッター */
 .site-footer {
   max-width: 480px;

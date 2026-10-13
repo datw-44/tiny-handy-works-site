@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>個人開発でWebサイトを作るには｜Tidbitsのやり方｜Tidbits</title>
+<meta name="description" content="個人でWebサイトやツールを作って公開するまでの流れを、Tidbitsが実際にどう作っているかを例に紹介します。使っているサービス、公開手順、続けるためのコツまでまとめました。" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4177347832172841"
+     crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main>
+  <a href="index.html" class="back-link">← トップに戻る</a>
+  <h1 class="article-title">個人開発でWebサイトを作るには</h1>
+  <p class="article-lead">「アプリやサイトを自分で作って公開してみたい」と思っても、何から始めればいいか分かりにくいものです。Tidbitsが実際にどう作って、どう公開しているかを例に、個人開発の進め方を紹介します。</p>
+
+  <div class="article-body">
+    <section>
+      <h2>Tidbitsの考え方</h2>
+      <p>Tidbitsでは、「大きな多機能アプリを作る」のではなく、「日常のちょっとした面倒を減らす、小さなツールを一つずつ出す」ことを方針にしています。たとえば最初のツールである<a href="https://oshiharai-navi.tiny-handy-works.com/">お支払いナビ</a>は、「このお店で、結局どの支払い方法が一番お得なんだっけ」という自分自身の疑問から始まりました。</p>
+      <p>個人開発でよくある挫折の理由は、作る対象が大きすぎて途中で疲れることです。1ヶ月で形になるくらいに絞ると、公開まで届きやすくなります。</p>
+    </section>
+
+    <section>
+      <h2>必要なものは意外と少ない</h2>
+      <p>静的なサイトであれば、次の3つが揃えば公開できます。</p>
+      <ul>
+        <li>コードを書く環境（エディタとブラウザ）</li>
+        <li>コードを置く場所（GitHubなどのホスティング）</li>
+        <li>公開する場所（GitHub Pages、Cloudflare Pages、Vercelなど）</li>
+      </ul>
+      <p>どれも、個人利用の範囲なら無料から始められます。独自ドメインを使いたい場合だけ、ドメイン代（年1,000〜2,000円ほど）がかかります。</p>
+    </section>
+
+    <section>
+      <h2>Tidbitsが使っているもの</h2>
+      <p>このTidbitsのトップページ（tiny-handy-works.com）は、ごく普通のHTML・CSSで作っています。フレームワークは使わず、ファイルをGitHubに置いて、GitHub Pagesで公開しています。独自ドメインは、Cloudflareで管理しています。</p>
+      <p>一方、<a href="https://oshiharai-navi.tiny-handy-works.com/">お支払いナビ</a>のほうは、ページ数が多いため、Next.jsという仕組みを使って、データから自動でページを生成しています。生成したHTMLは、同じくGitHub Pagesで公開しています。どちらも、サーバーを借りて動かし続ける必要がなく、公開のコストはドメイン代だけです。</p>
+    </section>
+
+    <section>
+      <h2>公開までの流れ</h2>
+      <p>初めてサイトを公開するまでの、おおまかな流れです。</p>
+      <ul>
+        <li>作りたいものを決める：できるだけ小さく。1画面でもいい</li>
+        <li>GitHubでアカウントを作り、リポジトリ（コードの置き場）を用意する</li>
+        <li>手元でHTMLやコードを書いて、ブラウザで動きを確認する</li>
+        <li>GitHubにコードを上げ（プッシュ）、GitHub Pagesで公開設定をする</li>
+        <li>独自ドメインを使いたい場合は、ドメインを買ってDNSを設定する</li>
+      </ul>
+      <p>特にDNSの設定が最初はつまずきやすいところですが、慣れると数分で終わる作業です。</p>
+    </section>
+
+    <section>
+      <h2>続けるためのコツ</h2>
+      <p>公開してからのほうが大変、というのが個人開発でよく言われる話です。Tidbitsが続けるために意識していることをいくつか挙げます。</p>
+      <ul>
+        <li>情報は定期的に見直す：掲載内容が古くなると、せっかく作ったツールの価値が下がります。更新のタイミングを月1回など決めると楽です</li>
+        <li>完璧を目指さずに公開する：手元で練り続けるより、使ってもらう中で見つかる改善のほうが有益なことが多いです</li>
+        <li>何かひとつ、自分が使うツールにする：自分が困っていることを解決するツールなら、作る動機が切れません</li>
+        <li>範囲を広げすぎない：次のツールを足すときは、既存のツールと別のサイトにする、など切り分けると管理が楽です</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>これから始める人へ</h2>
+      <p>個人開発は、何から手を付けるかで迷いがちです。最初の一歩としては、「使っているサービスで、ちょっと不便なこと」をメモに書き出すところから始めるのがおすすめです。その中に、1画面で解決できそうな小さな課題が見つかれば、それが最初のツールになります。</p>
+      <p>Tidbitsでも、今後、暮らしの中で見つけた小さな面倒を、少しずつツールにしていく予定です。新しく公開したツールは<a href="index.html">トップページ</a>に追加していきます。</p>
+    </section>
+  </div>
+
+  <p class="article-note">記載内容はTidbitsでの実際のやり方を元にしています。使うサービスや構成は、作りたいものや好みによって自由に選べます。</p>
+</main>
+
+<footer class="site-footer">
+  <nav class="site-footer-links" aria-label="サイト情報">
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="about.html">運営者情報</a>
+    <a href="contact.html">お問い合わせ</a>
+  </nav>
+  <p class="site-footer-copy">© Tidbits</p>
+</footer>
+</body>
+</html>
