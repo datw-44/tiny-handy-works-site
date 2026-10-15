@@ -377,3 +377,25 @@ main {
   font-weight: var(--fw-note);
   color: var(--text-faint);
 }
+
+/* ご意見・ご要望ボタン（トップページ） */
+.feedback-button {
+  display: block;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-xl);
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: var(--fw-heading);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.feedback-button:active {
+  transform: scale(0.98);
+  box-shadow: var(--shadow-md);
+}
